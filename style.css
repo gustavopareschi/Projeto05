@@ -32,22 +32,23 @@ header{
   background-color: var(--bg-primary);
 
   text-align: center;
-  margin-bottom: 1.4rem;
   padding: 2.9rem 0;
-
+  margin-bottom: 1.4rem;
+  
   
 }
 
 header h1{
   background-color: var(--bg-title);
   color: var(--fc-primary);
-
+  
   font-weight: 400;
   font-size: var(--fs-title);
   line-height: 3.4rem;
   letter-spacing: 0.05em;
-
-
+  
+  margin-bottom: 1.4rem;
+  
 }
 
 h2{
@@ -73,7 +74,7 @@ p{
   font-weight: 400;
   line-height: 1.5rem;
 
-  margin-bottom: 6.3rem;
+  
 
   text-align: center;
 }
@@ -167,4 +168,76 @@ main{
     opacity: 0;
     transform: translateY(15px);
   }
+}
+
+@media (min-width: 700px) {
+  :root{
+    font-size: 62.5%;
+
+  --fs-title: 4.8rem;
+  --fs-text: 24px;
+  }
+  
+  .page{
+    max-width: 1170px;
+    display: flex;
+    padding: 0 5rem;
+    gap:98px;
+  }
+  
+  header{
+    width: 377px;
+
+  }
+
+  header h1{
+    padding: 20px 0;
+  }
+
+  header p{
+    color: var(--fc-primary);
+    line-height: 20px;
+    margin: 0 50px;
+    width: 275px;
+    align-items: center;
+    text-align: center;
+  }
+
+  main{
+    padding: 64px 0;
+    display: grid;
+    gap: 32px;
+    grid-template-areas: "A B"
+    "C D";
+    
+    align-items: start;
+    
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+       
+    
+  }
+  
+  main div:nth-child(2) {
+    grid-area: D;
+    
+  }
+  
+  main div:nth-child(3) {
+    grid-area: B;
+    
+
+  }
+  
+  main div:nth-child(4) {
+    grid-area: C;
+    
+  }
+
+
+
+
+
 }
