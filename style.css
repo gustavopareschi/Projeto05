@@ -206,11 +206,13 @@ main{
   main{
     padding: 64px 0;
     display: grid;
+
     gap: 32px;
-    grid-template-areas: "A B"
+    grid-template-areas: 
+    "A B"
+    "C B"
     "C D";
     
-    align-items: start;
     
   }
 
@@ -221,12 +223,12 @@ main{
   }
   
   main div:nth-child(2) {
-    grid-area: D;
+    grid-area: B;
     
   }
   
   main div:nth-child(3) {
-    grid-area: B;
+    grid-area: D;
     
 
   }
